@@ -1,0 +1,44 @@
+.filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 4px;
+    color: #000000;
+    flex-direction: column;
+    box-shadow: 0 0.0625rem 0.125rem 0.0625rem rgba(0,0,0,.12);
+
+}
+
+.filters > * {
+    margin: 5px;
+    width: calc(100% - 10px);
+
+}
+
+.label {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.input{
+    background: transparent;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 0;
+    font-size: 1em;
+    min-height: 30px;
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 768px) {
+    .filters {
+        flex-direction: row;
+    }
+}

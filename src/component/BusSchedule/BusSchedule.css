@@ -1,0 +1,74 @@
+.busSchedule {
+    overflow-x: scroll;
+}
+
+.scheduleTable {
+    background: #fff;
+    margin: 20px auto;
+}
+
+.headerItem {
+    text-align: left;
+    padding: 8px;
+    background-color: #f2f2f2;
+}
+
+.headerSortable {
+    padding-right: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.headerSortable:after {
+    content: '';
+    height: 100%;
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./up-down.svg');
+}
+
+.headerSortable:hover {
+    border-radius: 4px;
+    background: gray;
+    color: #ffffff;
+}
+
+.sortDown,
+.sortUp {
+    border-radius: 4px;
+    background: #fff6f6;
+}
+
+.sortDown:after {
+    background-image: url('./down.svg');
+}
+
+.sortUp:after {
+    background-image: url('./down.svg');
+    transform: rotate(180deg);
+}
+
+.schedulerItem {
+    text-align: left;
+    padding: 8px;
+}
+
+.schedulerItem:last-child {
+    text-align: right;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

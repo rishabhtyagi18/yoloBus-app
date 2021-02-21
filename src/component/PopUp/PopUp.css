@@ -1,0 +1,87 @@
+
+
+@keyframes mobileAnimation {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+
+@keyframes desktopAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.formPopup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100vh;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.popupEnabled {
+    animation-name: mobileAnimation;
+    animation-timing-function:  ease-in-out;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    box-shadow: 0 0 13px -16px #000, 0 0 20px -18px #000, 0 0 25px -18px #000
+}
+
+.popupClose {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.popupLabel {
+    display: block;
+    margin:  8px 0 3px;
+    font-weight: 200;
+}
+
+.popupInput {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 0;
+    font-size: 1em;
+    min-height: 30px;
+    box-sizing: content-box;
+}
+
+.popupTotal {
+    font-size: 2em;
+    margin-top: 1em;
+    border: none;
+}
+
+.popupSubmit {
+    border: 1px solid rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .formPopup {
+        left: auto;
+        bottom: 0;
+        width: 400px;
+    }
+
+    .popupEnabled {
+        animation-name: desktopAnimation;
+    }
+}

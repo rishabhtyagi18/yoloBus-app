@@ -1,0 +1,23 @@
+.pagination {
+    text-align: center;
+}
+
+.paginationItem {
+    display: inline-block;
+    margin: 4px;
+}
+
+.paginationButton {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    outline: 0;
+}
+
+.buttonActive {
+    background-color: #282828;
+    cursor: default;
+    color: #ffffff;
+    outline: 0;
+}
